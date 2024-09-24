@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  background-color: #58daec;
+  padding: 30px;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b7f3ec;
+  margin-bottom: 20px;
+  background-color: rgba(240, 227, 44, 0.811);
+  padding: 30px;
+  border-bottom-left-radius: 500px;
+  border-top-right-radius: 500px;
+}
+
+.game-description {
+  font-size: 1.25rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.img {
+  height: 30vh;
+  width: 40vw;
+  text-align: top;
+}
+
+.button-group {
+  display: flex;
+  gap: 90px;
+  margin-top: 10px;
+}
+
+.guess-button, .restart-button {
+  padding: 10px 20px;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.guess-button {
+  background-color: #4caf50;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.guess-button:hover {
+  background-color: #45a049;
+}
+
+.restart-button {
+  background-color: #f44336;
+ height: 7vh;
+  border-radius: 7px;
+  width: 10vw;
+  font-size:  16px;
+}
+
+.restart-button:hover {
+  background-color: #d32f2f;
+  
+}
+
+.feedback {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.score-display {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f07612;
+  height: 5vh;
+  width: 10vw;
+  padding: 15px;
+  border-radius: 50px;
+  color: #eae1e1;
 }
